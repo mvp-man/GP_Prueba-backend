@@ -38,7 +38,7 @@ namespace AspNetClient.Controllers
             _invoiceService.Create(model);
             return Ok(model);
         }
-        [HttpPatch]
+        [HttpPut]
         [ActionName("Update")]
         public ActionResult<IEnumerable<string>> Update(Invoice model)
         {
